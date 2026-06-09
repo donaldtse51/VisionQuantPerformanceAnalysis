@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vision — Portfolio Performance</title>
+  <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+  <script src="data/site_config.js"></script>
+  <script src="data/portfolio.js"></script>
+  <style>
+    :root {
+      --bg-deep: #08060f;
+      --text: #eef0ff;
+      --muted: #9ca8c9;
+      --accent-blue: #3b82f6;
+      --accent-purple: #7c3aed;
+      --accent-violet: #6366f1;
+      --border: rgba(129, 140, 248, 0.22);
+      --card-bg: rgba(22, 18, 48, 0.72);
+      --gold: #f59e0b;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+      background: var(--bg-deep);
+      color: var(--text);
+      line-height: 1.5;
+    }
+    .inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    .lang-bar {
+      position: fixed;
+      top: 20px;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      pointer-events: none;
+    }
+    .lang-bar .inner {
+      display: flex;
+      justify-content: flex-end;
+    }
+    .lang-toggle {
+      display: flex;
+      gap: 10px;
+      pointer-events: auto;
+    }
+    .lang-toggle button {
+      background: rgba(30, 27, 75, 0.85);
+      border: 1px solid var(--border);
+      color: var(--muted);
+      padding: 12px 22px;
+      font-size: 1.05rem;
+      font-weight: 600;
+      min-width: 56px;
+      border-radius: 10px;
+      cursor: pointer;
+      backdrop-filter: blur(8px);
+      transition: border-color 0.15s, color 0.15s, background 0.15s;
+    }
+    .lang-toggle button:hover { color: var(--text); border-color: #818cf8; }
+    .lang-toggle button.active {
+      color: #fff;
+      background: linear-gradient(135deg, var(--accent-violet), var(--accent-purple));
+      border-color: transparent;
+    }
+
+    .page-section {
+      padding: 56px 0;
+      border-bottom: 1px solid rgba(99, 102, 241, 0.12);
+    }
+    .page-section:last-child { border-bottom: none; }
+
+    .section-hero {
+      background: linear-gradient(160deg, #0c1229 0%, #15103a 45%, #1a1040 100%);
+      padding-top: 72px;
+      padding-bottom: 64px;
+    }
+    .section-hero::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 320px;
+      background: radial-gradient(ellipse 80% 60% at 20% 0%, rgba(59, 130, 246, 0.18), transparent),
+                  radial-gradient(ellipse 60% 50% at 90% 10%, rgba(124, 58, 237, 0.15), transparent);
+      pointer-events: none;
+    }
+    .section-hero { position: relative; }
+    .section-hero .inner { position: relative; z-index: 1; }
+    h1 {
+      margin: 0 0 12px;
+      font-size: 2.6rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      background: linear-gradient(90deg, #e0e7ff, #a5b4fc);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .tagline { color: var(--muted); margin: 0 0 24px; max-width: 640px; font-size: 1.05rem; }
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: linear-gradient(135deg, var(--accent-blue), var(--accent-violet));
+      color: #fff;
+      text-decoration: none;
+      padding: 14px 26px;
+      border-radius: 12px;
+      font-weight: 600;
+      font-size: 1rem;
+      box-shadow: 0 4px 24px rgba(99, 102, 241, 0.35);
+    }
+    .cta:hover { filter: brightness(1.08); transform: translateY(-1px); }
+    .cta.disabled {
+      background: #334155;
+      box-shadow: none;
+      pointer-events: none;
+      opacity: 0.7;
+    }
+    .updated { font-size: 0.82rem; color: var(--muted); margin-top: 16px; }
+
+    .section-about {
+      background: linear-gradient(180deg, #100d24 0%, #0e0c1c 100%);
+    }
+    .section-stats {
+      background: linear-gradient(180deg, #0d1028 0%, #12102a 100%);
+    }
+    .section-charts {
+      background: linear-gradient(180deg, #0f0a22 0%, #0a0818 100%);
+      padding-bottom: 64px;
+    }
+    .section-footer {
+      background: #06050e;
+      padding: 32px 0 48px;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+
+    .section-head {
+      margin: 0 0 24px;
+    }
+    .section-head h2 {
+      margin: 0 0 6px;
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #c7d2fe;
+    }
+    .section-head .sub {
+      margin: 0;
+      font-size: 0.88rem;
+      color: var(--muted);
+    }
+    .badge {
+      display: inline-block;
+      font-size: 0.72rem;
+      padding: 4px 10px;
+      border-radius: 20px;
+      background: rgba(99, 102, 241, 0.2);
+      color: #a5b4fc;
+      border: 1px solid rgba(129, 140, 248, 0.3);
+      margin-left: 8px;
+      vertical-align: middle;
+    }
+
+    .about-box {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px 30px;
+      backdrop-filter: blur(6px);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    }
+    .about-box p {
+      margin: 0 0 16px;
+      font-size: 0.96rem;
+      line-height: 1.7;
+      max-width: 860px;
+    }
+    .about-box p:last-child {
+      margin-bottom: 0;
+      color: var(--muted);
+      font-size: 0.88rem;
+      padding-top: 16px;
+      margin-top: 8px;
+      border-top: 1px solid var(--border);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 16px;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 18px;
+      backdrop-filter: blur(4px);
+    }
+    .card .label {
+      font-size: 0.72rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+    .card .value {
+      font-size: 1.45rem;
+      font-weight: 700;
+      margin-top: 6px;
+      color: #e0e7ff;
+    }
+
+    .chart-panel {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 12px 8px 8px;
+      margin-bottom: 24px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    }
+    .chart-panel:last-child { margin-bottom: 0; }
+    .chart-label {
+      padding: 4px 16px 8px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #a5b4fc;
+    }
+
+    @media (max-width: 600px) {
+      .section-hero { padding-top: 88px; }
+      h1 { font-size: 1.85rem; }
+      .card .value { font-size: 1.2rem; }
+      .lang-bar { top: 16px; }
+      .lang-toggle button { padding: 10px 16px; font-size: 0.95rem; min-width: 48px; }
+      .page-section { padding: 40px 0; }
+      .inner { padding: 0 16px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="lang-bar">
+    <div class="inner">
+      <div class="lang-toggle">
+        <button type="button" id="btn-en" class="active">EN</button>
+        <button type="button" id="btn-zh">繁中</button>
+      </div>
+    </div>
+  </div>
+
+  <section class="page-section section-hero">
+    <div class="inner">
+      <h1 id="title-name">Vision</h1>
+      <p class="tagline" id="tagline"></p>
+      <a id="copy-link" class="cta disabled" href="#" target="_blank" rel="noopener">
+        <span id="cta-text">Binance Copy Trade →</span>
+      </a>
+      <p class="updated" id="updated-at"></p>
+    </div>
+  </section>
+
+  <section class="page-section section-about">
+    <div class="inner">
+      <div class="section-head">
+        <h2 id="lbl-about">About Vision</h2>
+      </div>
+      <div class="about-box" id="about-content"></div>
+    </div>
+  </section>
+
+  <section class="page-section section-stats">
+    <div class="inner">
+      <div class="section-head">
+        <h2 id="lbl-backtest-stats">Backtest statistics</h2>
+      </div>
+      <div class="grid" id="stats-grid"></div>
+    </div>
+  </section>
+
+  <section class="page-section section-charts">
+    <div class="inner">
+      <div class="section-head">
+        <h2 id="lbl-equity">Combined equity curve <span class="badge" id="bt-range"></span></h2>
+      </div>
+      <div class="chart-panel"><div id="equity-chart" style="height:420px"></div></div>
+
+      <div class="section-head" style="margin-top: 8px;">
+        <h2 id="lbl-dd">Drawdown</h2>
+      </div>
+      <div class="chart-panel"><div id="dd-chart" style="height:220px"></div></div>
+    </div>
+  </section>
+
+  <footer class="page-section section-footer">
+    <div class="inner">
+      <p id="disclaimer" style="margin:0;"></p>
+    </div>
+  </footer>
+
+  <script>
+    const I18N = {
+      en: {
+        tagline: () => window.VISION_SITE_CONFIG?.tagline_en || "",
+        cta: "Binance Copy Trade →",
+        about: "About Vision",
+        backtestStats: "Backtest statistics",
+        equity: "Combined equity curve",
+        dd: "Drawdown",
+        sharpe: "Sharpe",
+        annReturn: "Annual return",
+        mdd: "Max drawdown",
+        calmar: "Calmar",
+        totalReturn: "Total return",
+        tradeDays: "Trading days",
+        leverage: "Leverage",
+        disclaimer: () => window.VISION_PORTFOLIO?.disclaimer_en || "",
+        updated: "Data updated",
+        rangeSuffix: (lev) => `${lev}x Leverage`,
+        btcPrice: "BTC price (USD)",
+      },
+      zh: {
+        tagline: () => window.VISION_SITE_CONFIG?.tagline_zh || "",
+        cta: "Binance 跟單 →",
+        about: "關於 Vision",
+        backtestStats: "回測績效",
+        equity: "組合累積收益曲線",
+        dd: "回撤",
+        sharpe: "夏普比率",
+        annReturn: "年化收益",
+        mdd: "最大回撤",
+        calmar: "卡瑪比率",
+        totalReturn: "總收益",
+        tradeDays: "交易天數",
+        leverage: "槓桿",
+        disclaimer: () => window.VISION_PORTFOLIO?.disclaimer_zh || "",
+        updated: "資料更新",
+        rangeSuffix: (lev) => `${lev}x 槓桿`,
+        btcPrice: "BTC 價格 (USD)",
+      },
+    };
+
+    let lang = "en";
+
+    function t(key) {
+      const v = I18N[lang][key];
+      return typeof v === "function" ? v() : v;
+    }
+
+    function pct(v, digits = 1) {
+      if (v == null || Number.isNaN(v)) return "—";
+      return (v * 100).toFixed(digits) + "%";
+    }
+
+    function num(v, digits = 2) {
+      if (v == null || Number.isNaN(v)) return "—";
+      return Number(v).toFixed(digits);
+    }
+
+    function statCard(label, value, sub) {
+      return `<div class="card"><div class="label">${label}</div><div class="value">${value}</div>${sub ? `<div class="sub">${sub}</div>` : ""}</div>`;
+    }
+
+    function renderAbout() {
+      const C = window.VISION_SITE_CONFIG || {};
+      const paras = lang === "zh" ? (C.about_zh || []) : (C.about_en || []);
+      const el = document.getElementById("about-content");
+      if (!paras.length) {
+        el.innerHTML = "";
+        return;
+      }
+      el.innerHTML = paras.map((p, i) =>
+        `<p${i === paras.length - 1 ? ' class="risk"' : ""}>${p}</p>`
+      ).join("");
+    }
+
+    function applyLang() {
+      document.getElementById("btn-en").classList.toggle("active", lang === "en");
+      document.getElementById("btn-zh").classList.toggle("active", lang === "zh");
+      document.getElementById("tagline").textContent = t("tagline");
+      document.getElementById("cta-text").textContent = t("cta");
+      document.getElementById("lbl-about").textContent = t("about");
+      document.getElementById("lbl-backtest-stats").textContent = t("backtestStats");
+      renderAbout();
+      document.getElementById("lbl-equity").childNodes[0].textContent = t("equity") + " ";
+      document.getElementById("lbl-dd").textContent = t("dd");
+      document.getElementById("disclaimer").textContent = t("disclaimer");
+      render();
+    }
+
+    function render() {
+      const P = window.VISION_PORTFOLIO;
+      const C = window.VISION_SITE_CONFIG || {};
+      if (!P) {
+        document.body.innerHTML = "<p style='padding:24px'>Missing data/portfolio.js — run export_vision_site.py</p>";
+        return;
+      }
+
+      document.getElementById("title-name").textContent = C.portfolio_name || P.portfolio_name || "Vision";
+      document.getElementById("updated-at").textContent =
+        `${t("updated")}: ${(P.updated_at_utc || "").replace("T", " ").slice(0, 19)} UTC`;
+
+      const link = (C.binance_copy_trade_url || "").trim();
+      const a = document.getElementById("copy-link");
+      const validLink = link.startsWith("http://") || link.startsWith("https://");
+      if (validLink) {
+        a.href = link;
+        a.classList.remove("disabled");
+      } else {
+        a.href = "#";
+        a.classList.add("disabled");
+      }
+
+      const bt = P.backtest || {};
+      const m = bt.metrics || {};
+      const lev = bt.leverage || 1;
+
+      const rangeSuffix = I18N[lang].rangeSuffix(lev);
+      document.getElementById("bt-range").textContent =
+        `${bt.from || ""} → ${bt.to || ""} · ${rangeSuffix}`;
+
+      document.getElementById("stats-grid").innerHTML = [
+        statCard(t("sharpe"), num(m.sharpe, 2)),
+        statCard(t("annReturn"), pct(m.annual_return)),
+        statCard(t("mdd"), pct(m.mdd)),
+        statCard(t("calmar"), num(m.calmar, 2)),
+        statCard(t("totalReturn"), pct(m.total_return)),
+        statCard(t("leverage"), "×" + lev),
+        statCard(t("tradeDays"), m.trade_days ?? "—"),
+      ].join("");
+
+      const curve = bt.equity_curve || [];
+      const dates = curve.map((d) => d.date);
+      const port = curve.map((d) => d.portfolio * 100);
+      const btc = curve.map((d) => d.btc_benchmark * 100);
+      const btcUsd = curve.map((d) => d.btc_price_usd);
+      const hasBtcPrice = btcUsd.some((v) => v != null && v > 0);
+      const dd = curve.map((d) => -Math.abs(d.drawdown * 100));
+
+      const equityTraces = [
+        { x: dates, y: port, name: "Vision (backtest)", type: "scatter", line: { color: "#818cf8", width: 2.5 } },
+        {
+          x: dates,
+          y: btc,
+          name: "BTC buy & hold",
+          type: "scatter",
+          line: { color: "#f59e0b", width: 2, dash: "dot" },
+          customdata: btcUsd,
+          hovertemplate: hasBtcPrice
+            ? "%{x}<br>BTC buy & hold: %{y:.1f}%<br>BTC price: $%{customdata:,.0f}<extra></extra>"
+            : "%{x}<br>BTC buy & hold: %{y:.1f}%<extra></extra>",
+        },
+      ];
+
+      const equityLayout = {
+        margin: { t: 24, r: hasBtcPrice ? 72 : 16, b: 40, l: 48 },
+        paper_bgcolor: "transparent",
+        plot_bgcolor: "transparent",
+        font: { color: "#9ca8c9" },
+        xaxis: { gridcolor: "rgba(99,102,241,0.15)" },
+        yaxis: { title: "Cumulative return %", gridcolor: "rgba(99,102,241,0.15)", ticksuffix: "%", titlefont: { color: "#a5b4fc" } },
+        legend: { orientation: "h", y: 1.14 },
+        hovermode: "x unified",
+      };
+      if (hasBtcPrice) {
+        const prices = btcUsd.filter((v) => v != null && v > 0);
+        const pMin = Math.min(...prices);
+        const pMax = Math.max(...prices);
+        const pad = (pMax - pMin) * 0.04 || pMax * 0.02;
+        equityLayout.yaxis2 = {
+          title: t("btcPrice"),
+          overlaying: "y",
+          side: "right",
+          showgrid: false,
+          tickformat: "$,.0f",
+          color: "#64748b",
+          range: [pMin - pad, pMax + pad],
+          fixedrange: true,
+        };
+      }
+
+      Plotly.newPlot("equity-chart", equityTraces, equityLayout, { responsive: true, displayModeBar: false });
+
+      Plotly.newPlot("dd-chart", [
+        { x: dates, y: dd, name: "Drawdown", type: "scatter", fill: "tozeroy",
+          line: { color: "#ef4444" }, fillcolor: "rgba(239,68,68,0.15)" },
+      ], {
+        margin: { t: 16, r: 16, b: 40, l: 48 },
+        paper_bgcolor: "transparent",
+        plot_bgcolor: "transparent",
+        font: { color: "#9ca8c9" },
+        xaxis: { gridcolor: "rgba(99,102,241,0.15)" },
+        yaxis: { title: "Drawdown %", gridcolor: "rgba(99,102,241,0.15)", ticksuffix: "%", titlefont: { color: "#a5b4fc" } },
+        showlegend: false,
+        hovermode: "x unified",
+      }, { responsive: true, displayModeBar: false });
+    }
+
+    document.getElementById("btn-en").onclick = () => { lang = "en"; applyLang(); };
+    document.getElementById("btn-zh").onclick = () => { lang = "zh"; applyLang(); };
+    applyLang();
+  </script>
+</body>
+</html>
