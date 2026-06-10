@@ -1,5 +1,5 @@
 window.VISION_PORTFOLIO = {
-  "updated_at_utc": "2026-06-09T17:28:40.660845+00:00",
+  "updated_at_utc": "2026-06-10T04:03:11.272099+00:00",
   "portfolio_name": "Vision Quant",
   "backtest": {
     "from": "2021-12-31",
