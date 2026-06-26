@@ -1,17 +1,17 @@
 window.VISION_PORTFOLIO = {
-  "updated_at_utc": "2026-06-24T04:02:46.302947+00:00",
+  "updated_at_utc": "2026-06-26T04:02:44.679082+00:00",
   "portfolio_name": "Vision Quant",
   "backtest": {
     "from": "2021-12-31",
-    "to": "2026-06-22",
+    "to": "2026-06-24",
     "leverage": 5.0,
     "metrics": {
-      "sharpe": 3.847,
-      "annual_return": 1.714,
+      "sharpe": 3.853,
+      "annual_return": 1.716,
       "mdd": 0.215,
-      "calmar": 7.972,
-      "total_return": 7.6782,
-      "trade_days": 1635
+      "calmar": 7.981,
+      "total_return": 7.6979,
+      "trade_days": 1637
     },
     "equity_curve": [
       {
@@ -10040,1424 +10040,1438 @@ window.VISION_PORTFOLIO = {
       },
       {
         "date": "2025-12-02",
-        "portfolio": 5.9994,
-        "drawdown": 0.0288,
+        "portfolio": 5.9997,
+        "drawdown": 0.0285,
         "btc_benchmark": 0.9712,
         "btc_price_usd": 91322.78
       },
       {
         "date": "2025-12-03",
-        "portfolio": 6.0332,
-        "drawdown": 0.0,
+        "portfolio": 5.9974,
+        "drawdown": 0.0308,
         "btc_benchmark": 1.0176,
         "btc_price_usd": 93473.01
       },
       {
         "date": "2025-12-04",
-        "portfolio": 6.0416,
-        "drawdown": 0.0,
+        "portfolio": 6.0058,
+        "drawdown": 0.0224,
         "btc_benchmark": 0.9882,
         "btc_price_usd": 92111.41
       },
       {
         "date": "2025-12-05",
-        "portfolio": 6.0842,
+        "portfolio": 6.0484,
         "drawdown": 0.0,
         "btc_benchmark": 0.929,
         "btc_price_usd": 89367.6
       },
       {
         "date": "2025-12-06",
-        "portfolio": 6.0856,
+        "portfolio": 6.0498,
         "drawdown": 0.0,
         "btc_benchmark": 0.9266,
         "btc_price_usd": 89259.49
       },
       {
         "date": "2025-12-07",
-        "portfolio": 6.0955,
+        "portfolio": 6.0597,
         "drawdown": 0.0,
         "btc_benchmark": 0.9522,
         "btc_price_usd": 90442.97
       },
       {
         "date": "2025-12-08",
-        "portfolio": 6.0879,
+        "portfolio": 6.0521,
         "drawdown": 0.0076,
         "btc_benchmark": 0.9569,
         "btc_price_usd": 90661.91
       },
       {
         "date": "2025-12-09",
-        "portfolio": 6.0698,
+        "portfolio": 6.034,
         "drawdown": 0.0257,
         "btc_benchmark": 1.0009,
         "btc_price_usd": 92701.48
       },
       {
         "date": "2025-12-10",
-        "portfolio": 6.0696,
+        "portfolio": 6.0338,
         "drawdown": 0.0259,
         "btc_benchmark": 0.9868,
         "btc_price_usd": 92044.53
       },
       {
         "date": "2025-12-11",
-        "portfolio": 6.0675,
+        "portfolio": 6.0317,
         "drawdown": 0.028,
         "btc_benchmark": 0.9974,
         "btc_price_usd": 92539.48
       },
       {
         "date": "2025-12-12",
-        "portfolio": 6.0928,
+        "portfolio": 6.057,
         "drawdown": 0.0027,
         "btc_benchmark": 0.9492,
         "btc_price_usd": 90302.81
       },
       {
         "date": "2025-12-13",
-        "portfolio": 6.092,
+        "portfolio": 6.0563,
         "drawdown": 0.0034,
         "btc_benchmark": 0.9489,
         "btc_price_usd": 90290.5
       },
       {
         "date": "2025-12-14",
-        "portfolio": 6.1368,
+        "portfolio": 6.101,
         "drawdown": 0.0,
         "btc_benchmark": 0.9037,
         "btc_price_usd": 88194.64
       },
       {
         "date": "2025-12-15",
-        "portfolio": 6.1623,
+        "portfolio": 6.1265,
         "drawdown": 0.0,
         "btc_benchmark": 0.8662,
         "btc_price_usd": 86459.54
       },
       {
         "date": "2025-12-16",
-        "portfolio": 6.1668,
+        "portfolio": 6.131,
         "drawdown": 0.0,
         "btc_benchmark": 0.8968,
         "btc_price_usd": 87875.06
       },
       {
         "date": "2025-12-17",
-        "portfolio": 6.1921,
+        "portfolio": 6.1563,
         "drawdown": 0.0,
         "btc_benchmark": 0.8622,
         "btc_price_usd": 86273.47
       },
       {
         "date": "2025-12-18",
-        "portfolio": 6.1938,
+        "portfolio": 6.158,
         "drawdown": 0.0,
         "btc_benchmark": 0.8458,
         "btc_price_usd": 85515.97
       },
       {
         "date": "2025-12-19",
-        "portfolio": 6.1939,
+        "portfolio": 6.1581,
         "drawdown": 0.0,
         "btc_benchmark": 0.9023,
         "btc_price_usd": 88132.33
       },
       {
         "date": "2025-12-20",
-        "portfolio": 6.1967,
+        "portfolio": 6.1609,
         "drawdown": 0.0,
         "btc_benchmark": 0.9074,
         "btc_price_usd": 88367.87
       },
       {
         "date": "2025-12-21",
-        "portfolio": 6.1982,
+        "portfolio": 6.1624,
         "drawdown": 0.0,
         "btc_benchmark": 0.9136,
         "btc_price_usd": 88654.92
       },
       {
         "date": "2025-12-22",
-        "portfolio": 6.1955,
+        "portfolio": 6.1597,
         "drawdown": 0.0027,
         "btc_benchmark": 0.9116,
         "btc_price_usd": 88564.49
       },
       {
         "date": "2025-12-23",
-        "portfolio": 6.2085,
+        "portfolio": 6.1727,
         "drawdown": 0.0,
         "btc_benchmark": 0.8875,
         "btc_price_usd": 87448.18
       },
       {
         "date": "2025-12-24",
-        "portfolio": 6.2067,
+        "portfolio": 6.1709,
         "drawdown": 0.0018,
         "btc_benchmark": 0.8917,
         "btc_price_usd": 87642.08
       },
       {
         "date": "2025-12-25",
-        "portfolio": 6.2094,
+        "portfolio": 6.1736,
         "drawdown": 0.0,
         "btc_benchmark": 0.8824,
         "btc_price_usd": 87211.84
       },
       {
         "date": "2025-12-26",
-        "portfolio": 6.2101,
+        "portfolio": 6.1743,
         "drawdown": 0.0,
         "btc_benchmark": 0.8852,
         "btc_price_usd": 87337.95
       },
       {
         "date": "2025-12-27",
-        "portfolio": 6.2061,
+        "portfolio": 6.1703,
         "drawdown": 0.004,
         "btc_benchmark": 0.8961,
         "btc_price_usd": 87846.55
       },
       {
         "date": "2025-12-28",
-        "portfolio": 6.2052,
+        "portfolio": 6.1695,
         "drawdown": 0.0049,
         "btc_benchmark": 0.8972,
         "btc_price_usd": 87896.82
       },
       {
         "date": "2025-12-29",
-        "portfolio": 6.2113,
+        "portfolio": 6.1755,
         "drawdown": 0.0,
         "btc_benchmark": 0.8813,
         "btc_price_usd": 87160.08
       },
       {
         "date": "2025-12-30",
-        "portfolio": 6.2126,
+        "portfolio": 6.1768,
         "drawdown": 0.0,
         "btc_benchmark": 0.9087,
         "btc_price_usd": 88428.2
       },
       {
         "date": "2025-12-31",
-        "portfolio": 6.2193,
+        "portfolio": 6.1835,
         "drawdown": 0.0,
         "btc_benchmark": 0.8894,
         "btc_price_usd": 87535.69
       },
       {
         "date": "2026-01-01",
-        "portfolio": 6.2248,
+        "portfolio": 6.189,
         "drawdown": 0.0,
         "btc_benchmark": 0.9155,
         "btc_price_usd": 88745.03
       },
       {
         "date": "2026-01-02",
-        "portfolio": 6.2301,
+        "portfolio": 6.1943,
         "drawdown": 0.0,
         "btc_benchmark": 0.9416,
         "btc_price_usd": 89952.68
       },
       {
         "date": "2026-01-03",
-        "portfolio": 6.233,
+        "portfolio": 6.1972,
         "drawdown": 0.0,
         "btc_benchmark": 0.9557,
         "btc_price_usd": 90606.81
       },
       {
         "date": "2026-01-04",
-        "portfolio": 6.2275,
+        "portfolio": 6.1917,
         "drawdown": 0.0056,
         "btc_benchmark": 0.9747,
         "btc_price_usd": 91485.25
       },
       {
         "date": "2026-01-05",
-        "portfolio": 6.2436,
+        "portfolio": 6.2078,
         "drawdown": 0.0,
         "btc_benchmark": 1.0257,
         "btc_price_usd": 93850.25
       },
       {
         "date": "2026-01-06",
-        "portfolio": 6.25,
+        "portfolio": 6.2142,
         "drawdown": 0.0,
         "btc_benchmark": 1.0226,
         "btc_price_usd": 93703.02
       },
       {
         "date": "2026-01-07",
-        "portfolio": 6.2374,
+        "portfolio": 6.2016,
         "drawdown": 0.0126,
         "btc_benchmark": 0.9709,
         "btc_price_usd": 91309.5
       },
       {
         "date": "2026-01-08",
-        "portfolio": 6.2477,
+        "portfolio": 6.212,
         "drawdown": 0.0023,
         "btc_benchmark": 0.9649,
         "btc_price_usd": 91031.74
       },
       {
         "date": "2026-01-09",
-        "portfolio": 6.2536,
+        "portfolio": 6.2178,
         "drawdown": 0.0,
         "btc_benchmark": 0.9543,
         "btc_price_usd": 90542.01
       },
       {
         "date": "2026-01-10",
-        "portfolio": 6.2545,
+        "portfolio": 6.2187,
         "drawdown": 0.0,
         "btc_benchmark": 0.9514,
         "btc_price_usd": 90406.79
       },
       {
         "date": "2026-01-11",
-        "portfolio": 6.2594,
+        "portfolio": 6.2236,
         "drawdown": 0.0,
         "btc_benchmark": 0.9619,
         "btc_price_usd": 90894.95
       },
       {
         "date": "2026-01-12",
-        "portfolio": 6.2606,
+        "portfolio": 6.2248,
         "drawdown": 0.0,
         "btc_benchmark": 0.9685,
         "btc_price_usd": 91197.58
       },
       {
         "date": "2026-01-13",
-        "portfolio": 6.2576,
+        "portfolio": 6.2219,
         "drawdown": 0.003,
         "btc_benchmark": 1.0578,
         "btc_price_usd": 95336.38
       },
       {
         "date": "2026-01-14",
-        "portfolio": 6.2823,
+        "portfolio": 6.2466,
         "drawdown": 0.0,
         "btc_benchmark": 1.092,
         "btc_price_usd": 96917.94
       },
       {
         "date": "2026-01-15",
-        "portfolio": 6.2938,
+        "portfolio": 6.258,
         "drawdown": 0.0,
         "btc_benchmark": 1.0629,
         "btc_price_usd": 95571.14
       },
       {
         "date": "2026-01-16",
-        "portfolio": 6.2947,
+        "portfolio": 6.259,
         "drawdown": 0.0,
         "btc_benchmark": 1.0617,
         "btc_price_usd": 95515.13
       },
       {
         "date": "2026-01-17",
-        "portfolio": 6.2936,
+        "portfolio": 6.2578,
         "drawdown": 0.0011,
         "btc_benchmark": 1.0532,
         "btc_price_usd": 95124.13
       },
       {
         "date": "2026-01-18",
-        "portfolio": 6.2813,
+        "portfolio": 6.2455,
         "drawdown": 0.0134,
         "btc_benchmark": 1.0214,
         "btc_price_usd": 93649.97
       },
       {
         "date": "2026-01-19",
-        "portfolio": 6.2945,
+        "portfolio": 6.2587,
         "drawdown": 0.0003,
         "btc_benchmark": 0.9984,
         "btc_price_usd": 92583.9
       },
       {
         "date": "2026-01-20",
-        "portfolio": 6.4012,
+        "portfolio": 6.3654,
         "drawdown": 0.0,
         "btc_benchmark": 0.9069,
         "btc_price_usd": 88346.89
       },
       {
         "date": "2026-01-21",
-        "portfolio": 6.3801,
+        "portfolio": 6.3443,
         "drawdown": 0.0211,
         "btc_benchmark": 0.9298,
         "btc_price_usd": 89404.17
       },
       {
         "date": "2026-01-22",
-        "portfolio": 6.3806,
+        "portfolio": 6.3448,
         "drawdown": 0.0206,
         "btc_benchmark": 0.9316,
         "btc_price_usd": 89489.06
       },
       {
         "date": "2026-01-23",
-        "portfolio": 6.3789,
+        "portfolio": 6.3431,
         "drawdown": 0.0223,
         "btc_benchmark": 0.9323,
         "btc_price_usd": 89520.8
       },
       {
         "date": "2026-01-24",
-        "portfolio": 6.3797,
+        "portfolio": 6.3439,
         "drawdown": 0.0215,
         "btc_benchmark": 0.9244,
         "btc_price_usd": 89153.85
       },
       {
         "date": "2026-01-25",
-        "portfolio": 6.4369,
+        "portfolio": 6.4011,
         "drawdown": 0.0,
         "btc_benchmark": 0.8699,
         "btc_price_usd": 86629.43
       },
       {
         "date": "2026-01-26",
-        "portfolio": 6.4001,
+        "portfolio": 6.3643,
         "drawdown": 0.0368,
         "btc_benchmark": 0.9059,
         "btc_price_usd": 88300.09
       },
       {
         "date": "2026-01-27",
-        "portfolio": 6.4051,
+        "portfolio": 6.3694,
         "drawdown": 0.0317,
         "btc_benchmark": 0.9246,
         "btc_price_usd": 89165.67
       },
       {
         "date": "2026-01-28",
-        "portfolio": 6.4019,
+        "portfolio": 6.3661,
         "drawdown": 0.035,
         "btc_benchmark": 0.9252,
         "btc_price_usd": 89192.96
       },
       {
         "date": "2026-01-29",
-        "portfolio": 6.3687,
+        "portfolio": 6.3329,
         "drawdown": 0.0682,
         "btc_benchmark": 0.8261,
         "btc_price_usd": 84601.28
       },
       {
         "date": "2026-01-30",
-        "portfolio": 6.4231,
+        "portfolio": 6.3874,
         "drawdown": 0.0137,
         "btc_benchmark": 0.8169,
         "btc_price_usd": 84173.88
       },
       {
         "date": "2026-01-31",
-        "portfolio": 6.4989,
+        "portfolio": 6.4631,
         "drawdown": 0.0,
         "btc_benchmark": 0.698,
         "btc_price_usd": 78666.24
       },
       {
         "date": "2026-02-01",
-        "portfolio": 6.519,
+        "portfolio": 6.4832,
         "drawdown": 0.0,
         "btc_benchmark": 0.6612,
         "btc_price_usd": 76959.73
       },
       {
         "date": "2026-02-02",
-        "portfolio": 6.5945,
+        "portfolio": 6.5587,
         "drawdown": 0.0,
         "btc_benchmark": 0.6994,
         "btc_price_usd": 78733.18
       },
       {
         "date": "2026-02-03",
-        "portfolio": 6.6024,
+        "portfolio": 6.5666,
         "drawdown": 0.0,
         "btc_benchmark": 0.6343,
         "btc_price_usd": 75716.57
       },
       {
         "date": "2026-02-04",
-        "portfolio": 6.6436,
+        "portfolio": 6.6078,
         "drawdown": 0.0,
         "btc_benchmark": 0.5772,
         "btc_price_usd": 73068.27
       },
       {
         "date": "2026-02-05",
-        "portfolio": 6.7955,
+        "portfolio": 6.7597,
         "drawdown": 0.0,
         "btc_benchmark": 0.3564,
         "btc_price_usd": 62839.77
       },
       {
         "date": "2026-02-06",
-        "portfolio": 6.9096,
+        "portfolio": 6.8739,
         "drawdown": 0.0,
         "btc_benchmark": 0.5233,
         "btc_price_usd": 70573.42
       },
       {
         "date": "2026-02-07",
-        "portfolio": 6.9043,
+        "portfolio": 6.8685,
         "drawdown": 0.0054,
         "btc_benchmark": 0.4952,
         "btc_price_usd": 69269.36
       },
       {
         "date": "2026-02-08",
-        "portfolio": 6.9165,
+        "portfolio": 6.8807,
         "drawdown": 0.0,
         "btc_benchmark": 0.5183,
         "btc_price_usd": 70339.05
       },
       {
         "date": "2026-02-09",
-        "portfolio": 6.9123,
+        "portfolio": 6.8765,
         "drawdown": 0.0042,
         "btc_benchmark": 0.5135,
         "btc_price_usd": 70121.11
       },
       {
         "date": "2026-02-10",
-        "portfolio": 6.8668,
+        "portfolio": 6.8311,
         "drawdown": 0.0496,
         "btc_benchmark": 0.4855,
         "btc_price_usd": 68822.74
       },
       {
         "date": "2026-02-11",
-        "portfolio": 6.852,
+        "portfolio": 6.8162,
         "drawdown": 0.0645,
         "btc_benchmark": 0.4477,
         "btc_price_usd": 67068.6
       },
       {
         "date": "2026-02-12",
-        "portfolio": 6.8377,
+        "portfolio": 6.8019,
         "drawdown": 0.0788,
         "btc_benchmark": 0.43,
         "btc_price_usd": 66248.12
       },
       {
         "date": "2026-02-13",
-        "portfolio": 6.8675,
+        "portfolio": 6.8318,
         "drawdown": 0.0489,
         "btc_benchmark": 0.4863,
         "btc_price_usd": 68859.06
       },
       {
         "date": "2026-02-14",
-        "portfolio": 6.8699,
+        "portfolio": 6.8341,
         "drawdown": 0.0465,
         "btc_benchmark": 0.507,
         "btc_price_usd": 69815.93
       },
       {
         "date": "2026-02-15",
-        "portfolio": 6.8704,
+        "portfolio": 6.8346,
         "drawdown": 0.0461,
         "btc_benchmark": 0.4862,
         "btc_price_usd": 68854.15
       },
       {
         "date": "2026-02-16",
-        "portfolio": 6.8644,
+        "portfolio": 6.8286,
         "drawdown": 0.0521,
         "btc_benchmark": 0.4873,
         "btc_price_usd": 68904.3
       },
       {
         "date": "2026-02-17",
-        "portfolio": 6.8567,
+        "portfolio": 6.8209,
         "drawdown": 0.0598,
         "btc_benchmark": 0.457,
         "btc_price_usd": 67503.53
       },
       {
         "date": "2026-02-18",
-        "portfolio": 6.8603,
+        "portfolio": 6.8245,
         "drawdown": 0.0562,
         "btc_benchmark": 0.435,
         "btc_price_usd": 66482.39
       },
       {
         "date": "2026-02-19",
-        "portfolio": 6.8597,
+        "portfolio": 6.8239,
         "drawdown": 0.0568,
         "btc_benchmark": 0.4464,
         "btc_price_usd": 67011.11
       },
       {
         "date": "2026-02-20",
-        "portfolio": 6.8595,
+        "portfolio": 6.8237,
         "drawdown": 0.0569,
         "btc_benchmark": 0.4681,
         "btc_price_usd": 68015.82
       },
       {
         "date": "2026-02-21",
-        "portfolio": 6.8601,
+        "portfolio": 6.8243,
         "drawdown": 0.0563,
         "btc_benchmark": 0.4676,
         "btc_price_usd": 67990.55
       },
       {
         "date": "2026-02-22",
-        "portfolio": 6.8484,
+        "portfolio": 6.8127,
         "drawdown": 0.068,
         "btc_benchmark": 0.4604,
         "btc_price_usd": 67658.01
       },
       {
         "date": "2026-02-23",
-        "portfolio": 6.7953,
+        "portfolio": 6.7595,
         "drawdown": 0.1212,
         "btc_benchmark": 0.3959,
         "btc_price_usd": 64669.68
       },
       {
         "date": "2026-02-24",
-        "portfolio": 6.7862,
+        "portfolio": 6.7504,
         "drawdown": 0.1303,
         "btc_benchmark": 0.3833,
         "btc_price_usd": 64088.25
       },
       {
         "date": "2026-02-25",
-        "portfolio": 6.878,
-        "drawdown": 0.0384,
+        "portfolio": 6.8425,
+        "drawdown": 0.0381,
         "btc_benchmark": 0.4681,
         "btc_price_usd": 68015.07
       },
       {
         "date": "2026-02-26",
-        "portfolio": 6.8512,
-        "drawdown": 0.0652,
+        "portfolio": 6.8243,
+        "drawdown": 0.0564,
         "btc_benchmark": 0.4571,
         "btc_price_usd": 67507.98
       },
       {
         "date": "2026-02-27",
-        "portfolio": 6.8086,
-        "drawdown": 0.1079,
+        "portfolio": 6.7816,
+        "drawdown": 0.099,
         "btc_benchmark": 0.4224,
         "btc_price_usd": 65896.62
       },
       {
         "date": "2026-02-28",
-        "portfolio": 6.8167,
-        "drawdown": 0.0997,
+        "portfolio": 6.7898,
+        "drawdown": 0.0909,
         "btc_benchmark": 0.4471,
         "btc_price_usd": 67040.31
       },
       {
         "date": "2026-03-01",
-        "portfolio": 6.7971,
-        "drawdown": 0.1194,
+        "portfolio": 6.7701,
+        "drawdown": 0.1106,
         "btc_benchmark": 0.42,
         "btc_price_usd": 65786.1
       },
       {
         "date": "2026-03-02",
-        "portfolio": 6.8787,
-        "drawdown": 0.0378,
+        "portfolio": 6.8517,
+        "drawdown": 0.0289,
         "btc_benchmark": 0.4856,
         "btc_price_usd": 68828.41
       },
       {
         "date": "2026-03-03",
-        "portfolio": 6.8691,
-        "drawdown": 0.0474,
+        "portfolio": 6.8421,
+        "drawdown": 0.0385,
         "btc_benchmark": 0.4747,
         "btc_price_usd": 68322.36
       },
       {
         "date": "2026-03-04",
-        "portfolio": 7.0065,
+        "portfolio": 6.9796,
         "drawdown": 0.0,
         "btc_benchmark": 0.569,
         "btc_price_usd": 72691.25
       },
       {
         "date": "2026-03-05",
-        "portfolio": 6.9764,
+        "portfolio": 6.9494,
         "drawdown": 0.0301,
         "btc_benchmark": 0.5299,
         "btc_price_usd": 70880.6
       },
       {
         "date": "2026-03-06",
-        "portfolio": 6.9589,
+        "portfolio": 6.9319,
         "drawdown": 0.0477,
         "btc_benchmark": 0.4703,
         "btc_price_usd": 68116.8
       },
       {
         "date": "2026-03-07",
-        "portfolio": 6.9672,
+        "portfolio": 6.9403,
         "drawdown": 0.0393,
         "btc_benchmark": 0.4517,
         "btc_price_usd": 67256.53
       },
       {
         "date": "2026-03-08",
-        "portfolio": 6.9702,
+        "portfolio": 6.9432,
         "drawdown": 0.0363,
         "btc_benchmark": 0.424,
         "btc_price_usd": 65974.55
       },
       {
         "date": "2026-03-09",
-        "portfolio": 6.9708,
+        "portfolio": 6.9439,
         "drawdown": 0.0357,
         "btc_benchmark": 0.4773,
         "btc_price_usd": 68444.05
       },
       {
         "date": "2026-03-10",
-        "portfolio": 7.0012,
+        "portfolio": 6.9742,
         "drawdown": 0.0053,
         "btc_benchmark": 0.5099,
         "btc_price_usd": 69950.75
       },
       {
         "date": "2026-03-11",
-        "portfolio": 7.0034,
+        "portfolio": 6.9764,
         "drawdown": 0.0032,
         "btc_benchmark": 0.5152,
         "btc_price_usd": 70196.08
       },
       {
         "date": "2026-03-12",
-        "portfolio": 7.0109,
+        "portfolio": 6.9839,
         "drawdown": 0.0,
         "btc_benchmark": 0.5222,
         "btc_price_usd": 70521.4
       },
       {
         "date": "2026-03-13",
-        "portfolio": 7.0164,
+        "portfolio": 6.9895,
         "drawdown": 0.0,
         "btc_benchmark": 0.5309,
         "btc_price_usd": 70925.81
       },
       {
         "date": "2026-03-14",
-        "portfolio": 7.018,
+        "portfolio": 6.991,
         "drawdown": 0.0,
         "btc_benchmark": 0.5371,
         "btc_price_usd": 71210.95
       },
       {
         "date": "2026-03-15",
-        "portfolio": 7.0423,
+        "portfolio": 7.0154,
         "drawdown": 0.0,
         "btc_benchmark": 0.5715,
         "btc_price_usd": 72805.71
       },
       {
         "date": "2026-03-16",
-        "portfolio": 7.2164,
+        "portfolio": 7.1894,
         "drawdown": 0.0,
         "btc_benchmark": 0.6159,
         "btc_price_usd": 74862.85
       },
       {
         "date": "2026-03-17",
-        "portfolio": 7.1963,
+        "portfolio": 7.1693,
         "drawdown": 0.0201,
         "btc_benchmark": 0.5954,
         "btc_price_usd": 73913.62
       },
       {
         "date": "2026-03-18",
-        "portfolio": 7.1636,
+        "portfolio": 7.1366,
         "drawdown": 0.0528,
         "btc_benchmark": 0.5377,
         "btc_price_usd": 71238.67
       },
       {
         "date": "2026-03-19",
-        "portfolio": 7.1688,
+        "portfolio": 7.1419,
         "drawdown": 0.0476,
         "btc_benchmark": 0.5093,
         "btc_price_usd": 69922.59
       },
       {
         "date": "2026-03-20",
-        "portfolio": 7.1706,
+        "portfolio": 7.1436,
         "drawdown": 0.0458,
         "btc_benchmark": 0.5218,
         "btc_price_usd": 70504.11
       },
       {
         "date": "2026-03-21",
-        "portfolio": 7.1649,
+        "portfolio": 7.1379,
         "drawdown": 0.0515,
         "btc_benchmark": 0.4873,
         "btc_price_usd": 68906.04
       },
       {
         "date": "2026-03-22",
-        "portfolio": 7.1665,
+        "portfolio": 7.1395,
         "drawdown": 0.0499,
         "btc_benchmark": 0.4647,
         "btc_price_usd": 67860.15
       },
       {
         "date": "2026-03-23",
-        "portfolio": 7.1401,
+        "portfolio": 7.1131,
         "drawdown": 0.0763,
         "btc_benchmark": 0.5301,
         "btc_price_usd": 70889.47
       },
       {
         "date": "2026-03-24",
-        "portfolio": 7.1361,
+        "portfolio": 7.1091,
         "drawdown": 0.0803,
         "btc_benchmark": 0.5223,
         "btc_price_usd": 70527.74
       },
       {
         "date": "2026-03-25",
-        "portfolio": 7.1398,
+        "portfolio": 7.1129,
         "drawdown": 0.0766,
         "btc_benchmark": 0.5391,
         "btc_price_usd": 71303.52
       },
       {
         "date": "2026-03-26",
-        "portfolio": 7.1412,
+        "portfolio": 7.1142,
         "drawdown": 0.0752,
         "btc_benchmark": 0.4847,
         "btc_price_usd": 68786.63
       },
       {
         "date": "2026-03-27",
-        "portfolio": 7.1766,
+        "portfolio": 7.1496,
         "drawdown": 0.0398,
         "btc_benchmark": 0.4327,
         "btc_price_usd": 66375.3
       },
       {
         "date": "2026-03-28",
-        "portfolio": 7.175,
+        "portfolio": 7.148,
         "drawdown": 0.0414,
         "btc_benchmark": 0.4321,
         "btc_price_usd": 66345.57
       },
       {
         "date": "2026-03-29",
-        "portfolio": 7.1723,
+        "portfolio": 7.1454,
         "drawdown": 0.044,
         "btc_benchmark": 0.4242,
         "btc_price_usd": 65980.65
       },
       {
         "date": "2026-03-30",
-        "portfolio": 7.1471,
+        "portfolio": 7.1201,
         "drawdown": 0.0693,
         "btc_benchmark": 0.4406,
         "btc_price_usd": 66742.34
       },
       {
         "date": "2026-03-31",
-        "portfolio": 7.1589,
+        "portfolio": 7.132,
         "drawdown": 0.0575,
         "btc_benchmark": 0.4727,
         "btc_price_usd": 68228.04
       },
       {
         "date": "2026-04-01",
-        "portfolio": 7.159,
+        "portfolio": 7.132,
         "drawdown": 0.0574,
         "btc_benchmark": 0.47,
         "btc_price_usd": 68105.78
       },
       {
         "date": "2026-04-02",
-        "portfolio": 7.1633,
+        "portfolio": 7.1363,
         "drawdown": 0.0531,
         "btc_benchmark": 0.444,
         "btc_price_usd": 66898.97
       },
       {
         "date": "2026-04-03",
-        "portfolio": 7.1616,
+        "portfolio": 7.1346,
         "drawdown": 0.0548,
         "btc_benchmark": 0.4452,
         "btc_price_usd": 66954.46
       },
       {
         "date": "2026-04-04",
-        "portfolio": 7.1649,
+        "portfolio": 7.138,
         "drawdown": 0.0515,
         "btc_benchmark": 0.4527,
         "btc_price_usd": 67300.04
       },
       {
         "date": "2026-04-05",
-        "portfolio": 7.187,
+        "portfolio": 7.16,
         "drawdown": 0.0294,
         "btc_benchmark": 0.4894,
         "btc_price_usd": 69002.09
       },
       {
         "date": "2026-04-06",
-        "portfolio": 7.1732,
+        "portfolio": 7.1462,
         "drawdown": 0.0432,
         "btc_benchmark": 0.4861,
         "btc_price_usd": 68849.22
       },
       {
         "date": "2026-04-07",
-        "portfolio": 7.2125,
+        "portfolio": 7.1855,
         "drawdown": 0.0039,
         "btc_benchmark": 0.5523,
         "btc_price_usd": 71917.64
       },
       {
         "date": "2026-04-08",
-        "portfolio": 7.2204,
+        "portfolio": 7.1934,
         "drawdown": 0.0,
         "btc_benchmark": 0.5344,
         "btc_price_usd": 71089.08
       },
       {
         "date": "2026-04-09",
-        "portfolio": 7.2162,
+        "portfolio": 7.1892,
         "drawdown": 0.0042,
         "btc_benchmark": 0.5497,
         "btc_price_usd": 71797.32
       },
       {
         "date": "2026-04-10",
-        "portfolio": 7.2292,
+        "portfolio": 7.2023,
         "drawdown": 0.0,
         "btc_benchmark": 0.5751,
         "btc_price_usd": 72973.54
       },
       {
         "date": "2026-04-11",
-        "portfolio": 7.2347,
+        "portfolio": 7.2077,
         "drawdown": 0.0,
         "btc_benchmark": 0.5771,
         "btc_price_usd": 73066.16
       },
       {
         "date": "2026-04-12",
-        "portfolio": 7.2101,
+        "portfolio": 7.1832,
         "drawdown": 0.0245,
         "btc_benchmark": 0.5271,
         "btc_price_usd": 70750.56
       },
       {
         "date": "2026-04-13",
-        "portfolio": 7.2314,
-        "drawdown": 0.0033,
+        "portfolio": 7.2042,
+        "drawdown": 0.0036,
         "btc_benchmark": 0.6068,
         "btc_price_usd": 74439.14
       },
       {
         "date": "2026-04-14",
-        "portfolio": 7.2205,
-        "drawdown": 0.0142,
+        "portfolio": 7.1819,
+        "drawdown": 0.0258,
         "btc_benchmark": 0.601,
         "btc_price_usd": 74170.83
       },
       {
         "date": "2026-04-15",
-        "portfolio": 7.2159,
-        "drawdown": 0.0188,
+        "portfolio": 7.1773,
+        "drawdown": 0.0304,
         "btc_benchmark": 0.615,
         "btc_price_usd": 74819.73
       },
       {
         "date": "2026-04-16",
-        "portfolio": 7.2194,
-        "drawdown": 0.0153,
+        "portfolio": 7.1808,
+        "drawdown": 0.0269,
         "btc_benchmark": 0.6223,
         "btc_price_usd": 75160.65
       },
       {
         "date": "2026-04-17",
-        "portfolio": 7.2521,
+        "portfolio": 7.2135,
         "drawdown": 0.0,
         "btc_benchmark": 0.6643,
         "btc_price_usd": 77105.68
       },
       {
         "date": "2026-04-18",
-        "portfolio": 7.2561,
+        "portfolio": 7.2175,
         "drawdown": 0.0,
         "btc_benchmark": 0.6346,
         "btc_price_usd": 75730.99
       },
       {
         "date": "2026-04-19",
-        "portfolio": 7.3186,
+        "portfolio": 7.28,
         "drawdown": 0.0,
         "btc_benchmark": 0.5937,
         "btc_price_usd": 73834.83
       },
       {
         "date": "2026-04-20",
-        "portfolio": 7.2846,
+        "portfolio": 7.246,
         "drawdown": 0.034,
         "btc_benchmark": 0.6376,
         "btc_price_usd": 75866.81
       },
       {
         "date": "2026-04-21",
-        "portfolio": 7.2894,
+        "portfolio": 7.2508,
         "drawdown": 0.0293,
         "btc_benchmark": 0.6478,
         "btc_price_usd": 76338.72
       },
       {
         "date": "2026-04-22",
-        "portfolio": 7.3274,
+        "portfolio": 7.2889,
         "drawdown": 0.0,
         "btc_benchmark": 0.6879,
         "btc_price_usd": 78197.04
       },
       {
         "date": "2026-04-23",
-        "portfolio": 7.3182,
+        "portfolio": 7.2797,
         "drawdown": 0.0092,
         "btc_benchmark": 0.6897,
         "btc_price_usd": 78282.17
       },
       {
         "date": "2026-04-24",
-        "portfolio": 7.3136,
+        "portfolio": 7.275,
         "drawdown": 0.0139,
         "btc_benchmark": 0.672,
         "btc_price_usd": 77460.05
       },
       {
         "date": "2026-04-25",
-        "portfolio": 7.3145,
+        "portfolio": 7.2759,
         "drawdown": 0.0129,
         "btc_benchmark": 0.676,
         "btc_price_usd": 77647.1
       },
       {
         "date": "2026-04-26",
-        "portfolio": 7.323,
+        "portfolio": 7.2845,
         "drawdown": 0.0044,
         "btc_benchmark": 0.6982,
         "btc_price_usd": 78674.25
       },
       {
         "date": "2026-04-27",
-        "portfolio": 7.2929,
+        "portfolio": 7.2543,
         "drawdown": 0.0345,
         "btc_benchmark": 0.6703,
         "btc_price_usd": 77383.79
       },
       {
         "date": "2026-04-28",
-        "portfolio": 7.3037,
+        "portfolio": 7.2651,
         "drawdown": 0.0238,
         "btc_benchmark": 0.6481,
         "btc_price_usd": 76353.04
       },
       {
         "date": "2026-04-29",
-        "portfolio": 7.3087,
+        "portfolio": 7.2701,
         "drawdown": 0.0187,
         "btc_benchmark": 0.6353,
         "btc_price_usd": 75763.71
       },
       {
         "date": "2026-04-30",
-        "portfolio": 7.3072,
+        "portfolio": 7.2686,
         "drawdown": 0.0202,
         "btc_benchmark": 0.6472,
         "btc_price_usd": 76313.76
       },
       {
         "date": "2026-05-01",
-        "portfolio": 7.3181,
+        "portfolio": 7.2795,
         "drawdown": 0.0094,
         "btc_benchmark": 0.6883,
         "btc_price_usd": 78217.77
       },
       {
         "date": "2026-05-02",
-        "portfolio": 7.3181,
+        "portfolio": 7.2796,
         "drawdown": 0.0093,
         "btc_benchmark": 0.6982,
         "btc_price_usd": 78674.3
       },
       {
         "date": "2026-05-03",
-        "portfolio": 7.3157,
+        "portfolio": 7.2771,
         "drawdown": 0.0118,
         "btc_benchmark": 0.6957,
         "btc_price_usd": 78558.59
       },
       {
         "date": "2026-05-04",
-        "portfolio": 7.3423,
+        "portfolio": 7.3037,
         "drawdown": 0.0,
         "btc_benchmark": 0.7233,
         "btc_price_usd": 79840.28
       },
       {
         "date": "2026-05-05",
-        "portfolio": 7.3499,
+        "portfolio": 7.3113,
         "drawdown": 0.0,
         "btc_benchmark": 0.7462,
         "btc_price_usd": 80898.14
       },
       {
         "date": "2026-05-06",
-        "portfolio": 7.3602,
+        "portfolio": 7.3216,
         "drawdown": 0.0,
         "btc_benchmark": 0.7579,
         "btc_price_usd": 81443.78
       },
       {
         "date": "2026-05-07",
-        "portfolio": 7.3308,
+        "portfolio": 7.2922,
         "drawdown": 0.0293,
         "btc_benchmark": 0.727,
         "btc_price_usd": 80011.07
       },
       {
         "date": "2026-05-08",
-        "portfolio": 7.3263,
+        "portfolio": 7.2877,
         "drawdown": 0.0339,
         "btc_benchmark": 0.7309,
         "btc_price_usd": 80192.76
       },
       {
         "date": "2026-05-09",
-        "portfolio": 7.3332,
+        "portfolio": 7.2946,
         "drawdown": 0.027,
         "btc_benchmark": 0.7412,
         "btc_price_usd": 80666.55
       },
       {
         "date": "2026-05-10",
-        "portfolio": 7.364,
+        "portfolio": 7.3254,
         "drawdown": 0.0,
         "btc_benchmark": 0.774,
         "btc_price_usd": 82186.5
       },
       {
         "date": "2026-05-11",
-        "portfolio": 7.3615,
+        "portfolio": 7.323,
         "drawdown": 0.0024,
         "btc_benchmark": 0.7638,
         "btc_price_usd": 81716.73
       },
       {
         "date": "2026-05-12",
-        "portfolio": 7.3555,
+        "portfolio": 7.3169,
         "drawdown": 0.0085,
         "btc_benchmark": 0.737,
         "btc_price_usd": 80474.94
       },
       {
         "date": "2026-05-13",
-        "portfolio": 7.3638,
+        "portfolio": 7.3252,
         "drawdown": 0.0002,
         "btc_benchmark": 0.7112,
         "btc_price_usd": 79279.38
       },
       {
         "date": "2026-05-14",
-        "portfolio": 7.332,
+        "portfolio": 7.2934,
         "drawdown": 0.032,
         "btc_benchmark": 0.7497,
         "btc_price_usd": 81059.69
       },
       {
         "date": "2026-05-15",
-        "portfolio": 7.3331,
+        "portfolio": 7.2945,
         "drawdown": 0.0309,
         "btc_benchmark": 0.7066,
         "btc_price_usd": 79064.2
       },
       {
         "date": "2026-05-16",
-        "portfolio": 7.3709,
+        "portfolio": 7.3323,
         "drawdown": 0.0,
         "btc_benchmark": 0.686,
         "btc_price_usd": 78112.67
       },
       {
         "date": "2026-05-17",
-        "portfolio": 7.4001,
+        "portfolio": 7.3616,
         "drawdown": 0.0,
         "btc_benchmark": 0.6711,
         "btc_price_usd": 77418.3
       },
       {
         "date": "2026-05-18",
-        "portfolio": 7.4065,
+        "portfolio": 7.368,
         "drawdown": 0.0,
         "btc_benchmark": 0.661,
         "btc_price_usd": 76952.66
       },
       {
         "date": "2026-05-19",
-        "portfolio": 7.4175,
+        "portfolio": 7.3789,
         "drawdown": 0.0,
         "btc_benchmark": 0.6572,
         "btc_price_usd": 76775.55
       },
       {
         "date": "2026-05-20",
-        "portfolio": 7.4126,
+        "portfolio": 7.3741,
         "drawdown": 0.0049,
         "btc_benchmark": 0.6725,
         "btc_price_usd": 77486.19
       },
       {
         "date": "2026-05-21",
-        "portfolio": 7.412,
+        "portfolio": 7.3734,
         "drawdown": 0.0055,
         "btc_benchmark": 0.674,
         "btc_price_usd": 77554.57
       },
       {
         "date": "2026-05-22",
-        "portfolio": 7.4258,
+        "portfolio": 7.3872,
         "drawdown": 0.0,
         "btc_benchmark": 0.6289,
         "btc_price_usd": 75464.22
       },
       {
         "date": "2026-05-23",
-        "portfolio": 7.3848,
+        "portfolio": 7.3462,
         "drawdown": 0.041,
         "btc_benchmark": 0.6554,
         "btc_price_usd": 76694.86
       },
       {
         "date": "2026-05-24",
-        "portfolio": 7.3853,
+        "portfolio": 7.3467,
         "drawdown": 0.0406,
         "btc_benchmark": 0.6629,
         "btc_price_usd": 77039.11
       },
       {
         "date": "2026-05-25",
-        "portfolio": 7.3817,
+        "portfolio": 7.3431,
         "drawdown": 0.0441,
         "btc_benchmark": 0.6682,
         "btc_price_usd": 77287.49
       },
       {
         "date": "2026-05-26",
-        "portfolio": 7.3867,
+        "portfolio": 7.3482,
         "drawdown": 0.0391,
         "btc_benchmark": 0.6368,
         "btc_price_usd": 75831.78
       },
       {
         "date": "2026-05-27",
-        "portfolio": 7.4116,
+        "portfolio": 7.373,
         "drawdown": 0.0142,
         "btc_benchmark": 0.6043,
         "btc_price_usd": 74324.82
       },
       {
         "date": "2026-05-28",
-        "portfolio": 7.4199,
+        "portfolio": 7.3813,
         "drawdown": 0.006,
         "btc_benchmark": 0.587,
         "btc_price_usd": 73522.32
       },
       {
         "date": "2026-05-29",
-        "portfolio": 7.421,
+        "portfolio": 7.3824,
         "drawdown": 0.0049,
         "btc_benchmark": 0.5837,
         "btc_price_usd": 73370.02
       },
       {
         "date": "2026-05-30",
-        "portfolio": 7.4146,
+        "portfolio": 7.376,
         "drawdown": 0.0112,
         "btc_benchmark": 0.5928,
         "btc_price_usd": 73794.54
       },
       {
         "date": "2026-05-31",
-        "portfolio": 7.4074,
+        "portfolio": 7.3688,
         "drawdown": 0.0184,
         "btc_benchmark": 0.5885,
         "btc_price_usd": 73595.76
       },
       {
         "date": "2026-06-01",
-        "portfolio": 7.4482,
+        "portfolio": 7.4096,
         "drawdown": 0.0,
         "btc_benchmark": 0.5387,
         "btc_price_usd": 71285.61
       },
       {
         "date": "2026-06-02",
-        "portfolio": 7.5674,
+        "portfolio": 7.5288,
         "drawdown": 0.0,
         "btc_benchmark": 0.4387,
         "btc_price_usd": 66653.53
       },
       {
         "date": "2026-06-03",
-        "portfolio": 7.6326,
+        "portfolio": 7.594,
         "drawdown": 0.0,
         "btc_benchmark": 0.3824,
         "btc_price_usd": 64045.27
       },
       {
         "date": "2026-06-04",
-        "portfolio": 7.6384,
+        "portfolio": 7.5998,
         "drawdown": 0.0,
         "btc_benchmark": 0.3773,
         "btc_price_usd": 63808.0
       },
       {
         "date": "2026-06-05",
-        "portfolio": 7.6982,
+        "portfolio": 7.6596,
         "drawdown": 0.0,
         "btc_benchmark": 0.3175,
         "btc_price_usd": 61037.18
       },
       {
         "date": "2026-06-06",
-        "portfolio": 7.6933,
+        "portfolio": 7.6547,
         "drawdown": 0.005,
         "btc_benchmark": 0.3137,
         "btc_price_usd": 60860.86
       },
       {
         "date": "2026-06-07",
-        "portfolio": 7.7351,
+        "portfolio": 7.6965,
         "drawdown": 0.0,
         "btc_benchmark": 0.3661,
         "btc_price_usd": 63290.34
       },
       {
         "date": "2026-06-08",
-        "portfolio": 7.7206,
+        "portfolio": 7.682,
         "drawdown": 0.0145,
         "btc_benchmark": 0.3613,
         "btc_price_usd": 63066.57
       },
       {
         "date": "2026-06-09",
-        "portfolio": 7.7133,
+        "portfolio": 7.6747,
         "drawdown": 0.0218,
         "btc_benchmark": 0.3313,
         "btc_price_usd": 61676.6
       },
       {
         "date": "2026-06-10",
-        "portfolio": 7.7025,
+        "portfolio": 7.6639,
         "drawdown": 0.0326,
         "btc_benchmark": 0.3267,
         "btc_price_usd": 61465.5
       },
       {
         "date": "2026-06-11",
-        "portfolio": 7.6886,
+        "portfolio": 7.65,
         "drawdown": 0.0465,
         "btc_benchmark": 0.3721,
         "btc_price_usd": 63567.49
       },
       {
         "date": "2026-06-12",
-        "portfolio": 7.6873,
+        "portfolio": 7.6487,
         "drawdown": 0.0477,
         "btc_benchmark": 0.3715,
         "btc_price_usd": 63540.98
       },
       {
         "date": "2026-06-13",
-        "portfolio": 7.7056,
+        "portfolio": 7.667,
         "drawdown": 0.0294,
         "btc_benchmark": 0.3901,
         "btc_price_usd": 64401.47
       },
       {
         "date": "2026-06-14",
-        "portfolio": 7.736,
+        "portfolio": 7.6975,
         "drawdown": 0.0,
         "btc_benchmark": 0.4182,
         "btc_price_usd": 65705.49
       },
       {
         "date": "2026-06-15",
-        "portfolio": 7.7583,
+        "portfolio": 7.7197,
         "drawdown": 0.0,
         "btc_benchmark": 0.4309,
         "btc_price_usd": 66290.8
       },
       {
         "date": "2026-06-16",
-        "portfolio": 7.7523,
+        "portfolio": 7.7138,
         "drawdown": 0.006,
         "btc_benchmark": 0.4163,
         "btc_price_usd": 65617.31
       },
       {
         "date": "2026-06-17",
-        "portfolio": 7.7363,
+        "portfolio": 7.6977,
         "drawdown": 0.0221,
         "btc_benchmark": 0.3908,
         "btc_price_usd": 64433.18
       },
       {
         "date": "2026-06-18",
-        "portfolio": 7.6904,
+        "portfolio": 7.6518,
         "drawdown": 0.0679,
         "btc_benchmark": 0.3573,
         "btc_price_usd": 62880.18
       },
       {
         "date": "2026-06-19",
-        "portfolio": 7.6888,
+        "portfolio": 7.6502,
         "drawdown": 0.0695,
         "btc_benchmark": 0.3704,
         "btc_price_usd": 63490.92
       },
       {
         "date": "2026-06-20",
-        "portfolio": 7.7168,
+        "portfolio": 7.6782,
         "drawdown": 0.0416,
         "btc_benchmark": 0.3863,
         "btc_price_usd": 64227.47
       },
       {
         "date": "2026-06-21",
-        "portfolio": 7.6859,
+        "portfolio": 7.6473,
         "drawdown": 0.0724,
         "btc_benchmark": 0.3648,
         "btc_price_usd": 63228.4
       },
       {
         "date": "2026-06-22",
-        "portfolio": 7.6782,
+        "portfolio": 7.6396,
         "drawdown": 0.0801,
         "btc_benchmark": 0.3803,
         "btc_price_usd": 63945.99
+      },
+      {
+        "date": "2026-06-23",
+        "portfolio": 7.6523,
+        "drawdown": 0.0674,
+        "btc_benchmark": 0.3523,
+        "btc_price_usd": 62650.83
+      },
+      {
+        "date": "2026-06-24",
+        "portfolio": 7.6979,
+        "drawdown": 0.0218,
+        "btc_benchmark": 0.3166,
+        "btc_price_usd": 60997.22
       }
     ]
   },
