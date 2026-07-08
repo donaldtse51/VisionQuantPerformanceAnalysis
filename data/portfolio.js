@@ -1,17 +1,17 @@
 window.VISION_PORTFOLIO = {
-  "updated_at_utc": "2026-07-06T04:03:24.480093+00:00",
+  "updated_at_utc": "2026-07-08T04:03:48.848153+00:00",
   "portfolio_name": "Vision Quant",
   "backtest": {
     "from": "2021-12-31",
-    "to": "2026-07-04",
+    "to": "2026-07-06",
     "leverage": 5.0,
     "metrics": {
-      "sharpe": 4.056,
-      "annual_return": 1.733,
+      "sharpe": 4.052,
+      "annual_return": 1.73,
       "mdd": 0.14,
-      "calmar": 12.379,
-      "total_return": 7.8204,
-      "trade_days": 1647
+      "calmar": 12.357,
+      "total_return": 7.8153,
+      "trade_days": 1649
     },
     "equity_curve": [
       {
@@ -11531,17 +11531,31 @@ window.VISION_PORTFOLIO = {
       },
       {
         "date": "2026-07-03",
-        "portfolio": 7.8128,
+        "portfolio": 7.8102,
         "drawdown": 0.0,
         "btc_benchmark": 0.3496,
         "btc_price_usd": 62524.64
       },
       {
         "date": "2026-07-04",
-        "portfolio": 7.8204,
+        "portfolio": 7.8163,
         "drawdown": 0.0,
         "btc_benchmark": 0.3619,
         "btc_price_usd": 63094.9
+      },
+      {
+        "date": "2026-07-05",
+        "portfolio": 7.8122,
+        "drawdown": 0.0041,
+        "btc_benchmark": 0.3727,
+        "btc_price_usd": 63595.81
+      },
+      {
+        "date": "2026-07-06",
+        "portfolio": 7.8153,
+        "drawdown": 0.001,
+        "btc_benchmark": 0.381,
+        "btc_price_usd": 63981.88
       }
     ]
   },
